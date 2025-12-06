@@ -17,7 +17,6 @@ for c in range(cols - 1, -1, -1):
     try:
         cur = int(cur)
         nums.append(cur)
-        cur = ''
     except:
         if operations[p] == '+':
             res += sum(nums)
