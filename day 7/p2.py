@@ -23,7 +23,7 @@ def dfs(r, c):
         return res
     else:
         visited[(r, c)] = dfs(r + 1, c)
-        return dfs(r + 1, c)
+        return visited[(r, c)]
 
 
 print(dfs(0, s))
